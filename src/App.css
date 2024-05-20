@@ -1,0 +1,81 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+.ground {
+  width: 100%;
+  height: 5%;
+  position: fixed;
+  bottom: 0;
+  background-color: oklch(45.26% 0.125 50.85);
+}
+
+.grass {
+  width: 100%;
+  height: 2em;
+  background-color: green;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    87% 45%,
+    78% 100%,
+    63% 44%,
+    56% 100%,
+    46% 43%,
+    44% 100%,
+    35% 46%,
+    26% 100%,
+    21% 45%,
+    18% 95%,
+    15% 42%,
+    11% 84%,
+    7% 48%,
+    4% 100%,
+    0% 92%
+  );
+}
+
+.tree {
+  position: absolute;
+  top: -150px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 80% 20%;
+  width: 10px;
+  height: 150px;
+  justify-items: center;
+}
+
+.tree-one {
+  left: 10%;
+}
+
+.tree-two {
+  right: 30%;
+}
+
+.tree-top {
+  background-color: green;
+  width: 100px;
+  clip-path: polygon(
+    19% 35%,
+    46% 0,
+    79% 36%,
+    61% 35%,
+    92% 69%,
+    76% 69%,
+    100% 100%,
+    0 100%,
+    22% 67%,
+    6% 67%,
+    35% 36%
+  );
+}
+.trunk {
+  background-color: brown;
+  width: 20%;
+}
